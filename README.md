@@ -1,3 +1,5 @@
-# btre_project
+# Real Estate Django Web App
 
-Django real estate website with postgreSQL database.
+A real estate listings websites built with python, django and bootstrap.
+
+
