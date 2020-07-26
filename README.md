@@ -1,5 +1,5 @@
 # Real Estate Django Web App
 
-A real estate listings websites built with python, django and bootstrap.
+A real estate listings website built with python, django and bootstrap.
 
 
