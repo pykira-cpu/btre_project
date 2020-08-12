@@ -25,7 +25,7 @@ SECRET_KEY = 'f2-uc8uivd$1h5+id5v33vb^g3nf9n7o-sa=sj7#rbo=7f6o8y'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['nsn-realestate.herokuapp.com', '127.0.0.1'  ]
+ALLOWED_HOSTS = ['nsn-realestate.herokuapp.com', '127.0.0.1' ]
 
 
 # Application definition
@@ -148,5 +148,5 @@ MESSAGE_TAGS = {
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_HOST_USER = 'sainagaakhil@gmail.com'
-EMAIL_HOST_PASSWORD = 'taxpayerbailouts'
+EMAIL_HOST_PASSWORD = '****************'
 EMAIl_USE_TLS = True
