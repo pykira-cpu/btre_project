@@ -20,12 +20,12 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '-------------------------------------------------'
+SECRET_KEY = 'f2-uc8uivd$1h5+id5v33vb^g3nf9n7o-sa=sj7#rbo=7f6o8y'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['nsn-realestate.herokuapp.com', '127.0.0.1'  ]
 
 
 # Application definition
@@ -53,6 +53,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
 
 ROOT_URLCONF = 'btre.urls'
@@ -82,9 +83,9 @@ WSGI_APPLICATION = 'btre.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': '------',
-        'USER': '-------',
-        'PASSWORD': '------',
+        'NAME': 'btredb',
+        'USER': 'postgres',
+        'PASSWORD': 'postgres2020',
         'HOST': 'localhost'
     }
 }
@@ -146,6 +147,6 @@ MESSAGE_TAGS = {
 # Email Config
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
-EMAIL_HOST_USER = '----------@----.--'
-EMAIL_HOST_PASSWORD = '---------'
+EMAIL_HOST_USER = 'sainagaakhil@gmail.com'
+EMAIL_HOST_PASSWORD = 'taxpayerbailouts'
 EMAIl_USE_TLS = True
