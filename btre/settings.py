@@ -20,12 +20,12 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'f2-uc8uivd$1h5+id5v33vb^g3nf9n7o-sa=sj7#rbo=7f6o8y'
+SECRET_KEY = ''
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['nsn-realestate.herokuapp.com', '127.0.0.1' ]
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -145,12 +145,6 @@ MESSAGE_TAGS = {
     messages.ERROR : 'danger'
 }
 
-# Email Config
-EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_PORT = 587
-EMAIL_HOST_USER = 'sainagaakhil@gmail.com'
-EMAIL_HOST_PASSWORD = '****************'
-EMAIL_USE_TLS = True
 
 try:
     from local_settings import *
