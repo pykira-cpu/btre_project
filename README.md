@@ -1,5 +1,5 @@
 # Real Estate Website
-### This is a website for the fictional real estate company BT Real Estate.
+### This is a website for the fictional real estate company BT Real Estate. Check here for **[website](http://64.227.23.221/)**.
 
 Created using:
 
@@ -23,13 +23,13 @@ Created using:
 
 - The project's development environment was enclosed in a 'virtual environment' to isolate project files and library dependencies ensuring there would be no clashes with the libraries contained on the local machine. All requirements were tested locally including a local instance of the database before deploying the website on a Digital Ocean Linux Ubuntu droplet. The droplet was protected by SSH authentication and was accessed using PuTTy.
 
-- Gunicorn was used in combination with Nginx to replace Django's local deployment functionality and instead deploy the website globally. The website can be accessed using the IP address of the Linux droplet. Here is the **[link](http://64.227.23.221/)**.
+- Gunicorn was used in combination with Nginx to replace Django's local deployment functionality and instead deploy the website globally. The website can be accessed using the IP address of the Linux droplet. 
 
 ### Run it in your local machine
             
-        `git clone https://github.com/nsnakhil/btre_project.git`
+        git clone https://github.com/nsnakhil/btre_project.git
 
-** Make sure you have installed Django and postgres in the environment(virtual or local) your working! **
+**Make sure you have installed Django and postgres in the environment(virtual or local) your working!**
 
 Before running migrations, make changes to:
  
@@ -41,14 +41,14 @@ Before running migrations, make changes to:
 
 ### Run Migrations
 
-        `python manage.py makemigrations`
-        `python manage.py migrate`
+        python manage.py makemigrations
+        python manage.py migrate
 
 ### Create super user
-        `python manage.py createsuperuser`
+        python manage.py createsuperuser
 
 ### Create static files
-        `python manage.py collectstatic`
+        python manage.py collectstatic
 
 ### Run server
-        `python manage.py runserver`
+        python manage.py runserver
