@@ -25,3 +25,30 @@ Created using:
 
 - Gunicorn was used in combination with Nginx to replace Django's local deployment functionality and instead deploy the website globally. The website can be accessed using the IP address of the Linux droplet. Here is the **[link](http://64.227.23.221/)**.
 
+### Run it in your local machine
+            
+        `git clone https://github.com/nsnakhil/btre_project.git`
+
+** Make sure you have installed Django and postgres in the environment(virtual or local) your working! **
+
+Before running migrations, make changes to:
+ 
+- SECRET_KEY : ' 
+- ALLOWED_HOSTS : []
+- DATABASES : 'change usernmae, password and dbname to the ones you create on postgresDB'
+- DEBUG : True
+- EMAIL_* : 'To yours'
+
+### Run Migrations
+
+        `python manage.py makemigrations`
+        `python manage.py migrate`
+
+### Create super user
+        `python manage.py createsuperuser`
+
+### Create static files
+        `python manage.py collectstatic`
+
+### Run server
+        `python manage.py runserver`
